@@ -1,0 +1,34 @@
+:root {
+	--gap-2: 2px;
+	--gap-4: 4px;
+	--gap-8: 8px;
+	--gap-16: 16px;
+	--gap-32: 32px;
+	--gap-64: 64px;
+
+	--font-size-xs: 12px;
+	--font-size-s: 14px;
+	--font-size-m: 16px;
+	--font-size-l: 18px;
+	--font-size-xl: 20px;
+	--font-size-2xl: 24px;
+
+	--radius-xs: 2px;
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 12px;
+	--radius-circle: 50%;
+
+	--color-white: #fff;
+	--color-black: #000;
+	--color-bg: #ead9c0;
+
+	--media-xs: 360px;
+	--media-sm: 640px;
+	--media-md: 768px;
+	--media-lg: 1024px;
+	--media-xl: 1280px;
+	--media-2xl: 1536px;
+
+	--font-main: 'Roboto';
+}
