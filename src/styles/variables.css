@@ -2,16 +2,12 @@
 	--gap-2: 2px;
 	--gap-4: 4px;
 	--gap-8: 8px;
+	--gap-12: 12px;
 	--gap-16: 16px;
 	--gap-32: 32px;
 	--gap-64: 64px;
 
-	--font-size-xs: 12px;
-	--font-size-s: 14px;
-	--font-size-m: 16px;
-	--font-size-l: 18px;
-	--font-size-xl: 20px;
-	--font-size-2xl: 24px;
+	--neg-gap-8: -8px;
 
 	--radius-xs: 2px;
 	--radius-s: 4px;
@@ -21,7 +17,7 @@
 
 	--color-white: #fff;
 	--color-black: #000;
-	--color-bg: #ead9c0;
+	--color-bg: #f2f3f5;
 
 	--media-xs: 360px;
 	--media-sm: 640px;
@@ -31,4 +27,20 @@
 	--media-2xl: 1536px;
 
 	--font-main: 'Roboto';
+	--font-secondary: 'Edu SA Hand';
+
+	--font-size-xs: 12px;
+	--font-size-s: 14px;
+	--font-size-m: 16px;
+	--font-size-l: 18px;
+	--font-size-xl: 20px;
+	--font-size-2xl: 24px;
+
+	--font-w-light: 300;
+	--font-w-regular: 400;
+	--font-w-medium: 500;
+	--font-w-semi-bold: 600;
+	--font-w-bold: 700;
+	--font-w-extra-bold: 800;
+	--font-w-black: 900;
 }
