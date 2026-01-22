@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Header } from '$lib/components/header';
+	import { Footer } from '$lib/components/footer';
 	import favicon from '$lib/assets/images/favicon.svg';
 	import '../styles/app.css';
 
@@ -10,7 +11,10 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<Header contentData={data.header} />
-<main>
-	{@render children()}
-</main>
+<div class="layout">
+	<Header contentData={data.header} />
+	<main class="main">
+		{@render children()}
+	</main>
+	<Footer contentData={data.footer} />
+</div>

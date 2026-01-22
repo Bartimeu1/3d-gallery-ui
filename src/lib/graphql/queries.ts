@@ -19,3 +19,11 @@ export const GET_HEADER_DATA = gql`
 		}
 	}
 `;
+
+export const GET_FOOTER_DATA = gql`
+	query {
+		footer {
+			copyright
+		}
+	}
+`;
