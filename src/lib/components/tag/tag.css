@@ -1,0 +1,18 @@
+.tag {
+	border: 1px solid var(--color-black);
+	border-radius: var(--radius-m);
+	background: var(--color-white);
+	padding: var(--gap-6) var(--gap-12);
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+	margin: 0 var(--gap-8);
+
+	&:hover {
+		background: inherit;
+	}
+
+	&.selected {
+		background: var(--color-black);
+		color: var(--color-white);
+	}
+}

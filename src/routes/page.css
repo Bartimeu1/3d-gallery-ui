@@ -1,0 +1,12 @@
+.tagsWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tagsList {
+	width: fit-content;
+	background: var(--color-white);
+	padding: var(--gap-16);
+	border-radius: var(--radius-l);
+}

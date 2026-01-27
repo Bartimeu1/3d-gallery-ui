@@ -27,3 +27,12 @@ export const GET_FOOTER_DATA = gql`
 		}
 	}
 `;
+
+export const GET_ALL_TAGS = gql`
+	query {
+		tags {
+			slug
+			label
+		}
+	}
+`;
