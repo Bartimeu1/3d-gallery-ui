@@ -3,10 +3,16 @@
 	background: var(--color-white);
 	border-radius: var(--radius-m);
 	padding: var(--gap-8) var(--gap-32);
+	margin-bottom: var(--gap-32);
+}
+
+.headerContainer {
+	margin: 0 auto;
+	width: 100%;
+	max-width: var(--container-w);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: var(--gap-32);
 }
 
 .homeLink {

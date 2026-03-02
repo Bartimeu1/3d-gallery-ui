@@ -1,5 +1,6 @@
 export const ROUTES = {
-	home: '/'
+	home: '/',
+	art: '/art'
 } as const;
 
 export const URL_PARAMS = {

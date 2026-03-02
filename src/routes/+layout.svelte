@@ -14,7 +14,9 @@
 <div class="layout">
 	<Header contentData={data.header} />
 	<main class="main">
-		{@render children()}
+		<div class="container">
+			{@render children()}
+		</div>
 	</main>
 	<Footer contentData={data.footer} />
 </div>

@@ -3,12 +3,15 @@
 	import { goto } from '$app/navigation';
 
 	import { Tag } from '$lib/components/tag';
+	import { ArtItem } from '$lib/components/art-item';
+	import { getImageUrl } from '$lib/utils/common';
 	import { ROUTES, URL_PARAMS } from '$lib/constants/routes';
 
 	import './page.css';
 
 	const { data } = $props();
-	const { tags } = $derived(data);
+	const { tags, arts, content } = $derived(data);
+	const { emptyArtsListText, emptyArtsListImage } = $derived(content);
 
 	const handleTagToggle = (tag: string) => () => {
 		const selectedTags = page.url.searchParams.get(URL_PARAMS.tags)?.split(',') ?? [];
@@ -30,3 +33,20 @@
 		{/each}
 	</div>
 </div>
+
+{#if arts.length}
+	<div class="artsList">
+		{#each arts as artItem (artItem.slug)}
+			<ArtItem {...artItem} />
+		{/each}
+	</div>
+{:else}
+	<div class="emptyList">
+		<h3 class="emptyListTitle">{emptyArtsListText}</h3>
+		<img
+			class="emptyListImage"
+			src={getImageUrl(emptyArtsListImage.url)}
+			alt={emptyArtsListImage.altText}
+		/>
+	</div>
+{/if}

@@ -28,11 +28,36 @@ export const GET_FOOTER_DATA = gql`
 	}
 `;
 
+export const GET_HOME_DATA = gql`
+	query {
+		home {
+			emptyArtsListText
+			emptyArtsListImage {
+				url
+				alternativeText
+			}
+		}
+	}
+`;
+
 export const GET_ALL_TAGS = gql`
 	query {
 		tags {
 			slug
 			label
+		}
+	}
+`;
+
+export const GET_ARTS_BY_FILTERS = gql`
+	query ArtsByFilters($filters: ArtFiltersInput) {
+		arts(filters: $filters) {
+			slug
+			title
+			description
+			previewImage {
+				url
+			}
 		}
 	}
 `;

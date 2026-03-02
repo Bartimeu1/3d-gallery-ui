@@ -20,14 +20,16 @@
 </script>
 
 <header class="header">
-	<a class="homeLink" href={resolve(ROUTES.home)}>
-		<img src={getImageUrl(logoImage.url)} alt={logoImage.altText} width="40" />
-		{logoTitle}
-	</a>
-	<nav class="navigation">
-		{#each navigation as { link, title, id } (id)}
-			{@const isActive = page.url.pathname === link}
-			<a href={resolve(link)} class="navLink" class:active={isActive}>{title}</a>
-		{/each}
-	</nav>
+	<div class="headerContainer">
+		<a class="homeLink" href={resolve(ROUTES.home)}>
+			<img src={getImageUrl(logoImage.url)} alt={logoImage.altText} width="40" />
+			{logoTitle}
+		</a>
+		<nav class="navigation">
+			{#each navigation as { link, title, id } (id)}
+				{@const isActive = page.url.pathname === link}
+				<a href={resolve(link)} class="navLink" class:active={isActive}>{title}</a>
+			{/each}
+		</nav>
+	</div>
 </header>

@@ -9,4 +9,27 @@
 	background: var(--color-white);
 	padding: var(--gap-16);
 	border-radius: var(--radius-l);
+	margin-bottom: var(--gap-32);
+}
+
+.artsList {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	justify-content: center;
+	gap: var(--gap-16);
+}
+
+.emptyList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.emptyListTitle {
+	font-size: var(--font-size-2xl);
+	margin-right: var(--gap-12);
+}
+
+.emptyListImage {
+	width: 22px;
 }
